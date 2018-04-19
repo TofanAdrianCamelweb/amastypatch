@@ -319,10 +319,7 @@ class Collection extends \Magento\Catalog\Model\ResourceModel\Product\Collection
      */
     public function addFieldToFilter($field, $condition = null)
     {
-        if ($this->queryResponse !== null) {
-            throw new \RuntimeException('Illegal state');
-        }
-
+       
         if (!is_array($condition) || !in_array(key($condition), ['from', 'to'], true)) {
             // See app/code/Magento/Catalog/Model/ResourceModel/Product/Indexer/Eav/AbstractEav::_getIndexableAttributesCondition()
             // Visibility filter wasn't in index before 2.2
