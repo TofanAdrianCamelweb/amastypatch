@@ -1,6 +1,6 @@
 <?php
 /**
- * @author Amasty Team
+ * @author Amasty Team patch
  * @copyright Copyright (c) 2018 Amasty (https://www.amasty.com)
  * @package Amasty_Shopby
  */
